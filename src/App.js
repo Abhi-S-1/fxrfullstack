@@ -5,7 +5,7 @@ import PageDetails from "./PageDetails";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/fxrfullstack">
       <div>
         <Switch>
           <Route exact path="/" component={Pages} />
