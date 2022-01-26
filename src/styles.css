@@ -1,0 +1,227 @@
+body {
+  background: #cbffff;
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main {
+  background-color: #808080;
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.firstHalf {
+  background-color: #808080;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.secondHalf {
+  background-color: #808080;
+  height: 50rem;
+  /* display: flex; */
+  /* direction: rtl;
+  flex-direction: column-reverse; */
+}
+
+.firstName {
+  width: 50%;
+  height: 17px;
+  margin-left: 3%;
+  background-color: #ffa500;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  padding-bottom: 5px;
+}
+.lastName {
+  width: 50%;
+  height: 17px;
+  margin-right: 3%;
+  background-color: #008004;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: overline;
+  padding-top: 5px;
+  cursor: pointer;
+}
+.banner {
+  width: 90%;
+  margin-left: 5%;
+  height: 700px;
+  object-fit: stretch;
+}
+
+.banner:hover {
+  opacity: 75%;
+}
+
+.modal,
+.modal-box {
+  z-index: 900;
+}
+
+.modal-sandbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+}
+
+.modal-box {
+  position: relative;
+  width: 80%;
+  max-width: 920px;
+  margin: 100px auto;
+  animation-name: modalbox;
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0, 0, 0.3, 1.6);
+}
+
+.modal-header {
+  padding: 20px 40px;
+  background: #546e7a;
+  color: #ffffff;
+}
+
+.modal-body {
+  background: #eceff1;
+  padding: 60px 40px;
+}
+
+/* Close Button */
+.close-modal {
+  text-align: right;
+  cursor: pointer;
+}
+
+/* Animation */
+@-webkit-keyframes modalbox {
+  0% {
+    top: -250px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes modalbox {
+  0% {
+    top: -250px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .firstName {
+    width: 100%;
+    margin-left: 0;
+    height: 30vh;
+    margin-top: 5%;
+  }
+  .lastName {
+    width: 100%;
+    margin-right: 0;
+    height: 30vh;
+    margin-bottom: 5%;
+  }
+  .banner {
+    height: 225px;
+    margin-left: 0px;
+    width: 100%;
+  }
+  .firstHalf {
+    margin-bottom: -20px;
+  }
+  body {
+    margin-bottom: 12%;
+  }
+  .btn {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .banner {
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .banner {
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .banner {
+    height: 500px;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .banner {
+    height: 500px;
+    width: 80%;
+    margin-left: 130px;
+    margin-top: 20px;
+  }
+  main {
+    height: 100vh;
+  }
+  body {
+    height: 105wh;
+    width: 105vw;
+  }
+}
+.art-content {
+  margin-top: 20px;
+  max-width: 845px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 22px;
+  color: black;
+  line-height: 33px;
+}
+
+.btn {
+  font-size: 14px;
+  background: #0bd;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 2px;
+  text-decoration: none;
+}
+.btn:hover {
+  background: #0bb;
+}
+
+mark.red {
+  color: #ff0000;
+  background: none;
+}
