@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/fxrfullstack/static/css/main.28da81f0.css",
+    "main.js": "/fxrfullstack/static/js/main.90790a43.js",
+    "static/js/787.50b63618.chunk.js": "/fxrfullstack/static/js/787.50b63618.chunk.js",
+    "static/media/banner_medium.png": "/fxrfullstack/static/media/banner_medium.f66b6503198bb05af995.png",
+    "index.html": "/fxrfullstack/index.html",
+    "main.28da81f0.css.map": "/fxrfullstack/static/css/main.28da81f0.css.map",
+    "main.90790a43.js.map": "/fxrfullstack/static/js/main.90790a43.js.map",
+    "787.50b63618.chunk.js.map": "/fxrfullstack/static/js/787.50b63618.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28da81f0.css",
+    "static/js/main.90790a43.js"
+  ]
+}
